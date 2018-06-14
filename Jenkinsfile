@@ -8,5 +8,8 @@ node {
     stage('check java') {
         sh "java -version"
     }
+    stage('check java') {
+        sh "mvn clean compile"
+    }
 
 }
